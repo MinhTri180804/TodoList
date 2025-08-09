@@ -1,4 +1,3 @@
-import {} from '@ng-icon'
 import { Component } from '@angular/core';
 import { TitleCasePipe, DatePipe } from '@angular/common';
 
@@ -7,7 +6,7 @@ import { TitleCasePipe, DatePipe } from '@angular/common';
   imports: [TitleCasePipe, DatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
-  viewProviders: [providerIcon]
+  viewProviders: [],
 })
 export class HeaderComponent {
   readonly welcomeMessage: string = 'Good Morning';
