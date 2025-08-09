@@ -27,4 +27,25 @@ header > .header__content > p.header__content-date {
 
 header > .header__actions {
   flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: stretch;
+  gap: 8px;
+}
+
+header > .header__actions > .header__actions-more {
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease;
+  box-shadow: 0;
+}
+
+header > .header__actions > .header__actions-more:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
