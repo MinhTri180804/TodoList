@@ -1,11 +1,15 @@
+import {} from '@ng-icon'
 import { Component } from '@angular/core';
+import { TitleCasePipe, DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [TitleCasePipe, DatePipe],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrl: './header.component.css',
+  viewProviders: [providerIcon]
 })
 export class HeaderComponent {
-
+  readonly welcomeMessage: string = 'Good Morning';
+  readonly date = new Date();
 }
