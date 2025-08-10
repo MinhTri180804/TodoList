@@ -1,3 +1,12 @@
 main {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 32px;
+}
+
+main > app-todo-list {
+  flex-grow: 1;
+  width: 100%;
 }

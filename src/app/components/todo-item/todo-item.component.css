@@ -1,0 +1,97 @@
+.todo__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  background-color: var(--white-color);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: box-shadow 0.4s ease;
+}
+
+.todo__item:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Todo item contents style */
+.todo__item > .todo__item-contents {
+  flex-grow: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+}
+
+.todo__item > .todo__item-contents input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--white-color);
+  border: 1px solid var(--zinc-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.todo__item > .todo__item-contents > label.todo__item-contents--name {
+  font-size: 16px;
+  color: var(--black-color);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* todo items actions styles */
+.todo__item > .todo__item-actions {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 8px;
+}
+
+.todo__item > .todo__item-actions > .todo__item-actions--more,
+.todo__item > .todo__item-actions > .todo__item-actions--clock {
+  width: 32px;
+  height: 32px;
+  color: var(--black-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--zinc-color);
+}
+
+.todo__item > .todo__item-actions > .todo__item-actions--clock {
+  width: fit-content;
+  height: 32px;
+  padding: 3px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: var(--gray-description-color);
+}
+
+.todo__item > .todo__item-actions > .todo__item-actions--clock > span {
+  font-size: 14px;
+}
+
+.todo__item
+  > .todo__item-actions
+  > .todo__item-actions--clock
+  > app-clock-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.todo__item > .todo__item-actions > .todo__item-actions--more {
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+
+.todo__item > .todo__item-actions > .todo__item-actions--more:hover {
+  opacity: 0.8;
+}

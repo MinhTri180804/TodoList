@@ -1,0 +1,7 @@
+<ul class="todo__list">
+  @for(todo of todoListData; track todo.id; let index = $index) {
+  <li>
+    <app-todo-item [todo]="todo"></app-todo-item>
+  </li>
+  }
+</ul>

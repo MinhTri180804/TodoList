@@ -1,1 +1,20 @@
-<p>todo-item works!</p>
+<div class="todo__item">
+  <div class="todo__item-contents">
+    <app-checkbox (click)="handleClick()"></app-checkbox>
+    <label [htmlFor]="todo().id" class="todo__item-contents--name">{{
+      todo().name
+    }}</label>
+  </div>
+  <div class="todo__item-actions">
+    <div class="todo__item-actions--clock">
+      <app-clock-icon [size]="20"> </app-clock-icon>
+      <span class="time--start">8:00</span>
+      <span>-</span>
+      <span class="time--end">12:00</span>
+    </div>
+
+    <div class="todo__item-actions--more">
+      <app-ellipsis-vertical-icon [size]="24"></app-ellipsis-vertical-icon>
+    </div>
+  </div>
+</div>

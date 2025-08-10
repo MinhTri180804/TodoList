@@ -1,0 +1,12 @@
+ul.todo__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+
+ul.todo__list > li {
+  width: 100%;
+}

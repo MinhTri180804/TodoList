@@ -1,11 +1,10 @@
-import { HugeiconsIconComponent } from '@hugeicons/angular';
-import { Menu01Icon } from '@hugeicons/core-free-icons';
 import { Component } from '@angular/core';
 import { TitleCasePipe, DatePipe } from '@angular/common';
+import { BarsIconComponent } from '../icons/bars-icon/bars-icon.component';
 
 @Component({
   selector: 'app-header',
-  imports: [TitleCasePipe, DatePipe, HugeiconsIconComponent],
+  imports: [TitleCasePipe, DatePipe, BarsIconComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
   viewProviders: [],
@@ -13,5 +12,4 @@ import { TitleCasePipe, DatePipe } from '@angular/common';
 export class HeaderComponent {
   readonly welcomeMessage: string = 'Good Morning';
   readonly date = new Date();
-  Menu01Icon = Menu01Icon;
 }
